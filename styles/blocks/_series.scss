@@ -1,0 +1,36 @@
+.series {
+    &__title {
+        display: inline-block;
+        padding: 20px 0;
+        border-bottom: 1px solid white;
+        font-size: 18px;
+    }
+
+    &-nav {
+        border-bottom: 1px solid $gray;
+        margin-bottom: 20px;
+
+        &__list {
+            @include flex(row , auto, center, 40px);
+        }
+
+        &__item {
+            padding: 20px 0;
+            font-size: 20px;
+
+            transition: all .3s ease;
+
+            &:hover {
+                font-size: 25px;
+            }
+
+            &--current {
+                padding: 20px;
+                font-size: 25px;
+                font-weight: bold;
+                border-bottom: 3px solid $orange;
+            }
+        }
+    }
+
+}

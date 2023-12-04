@@ -1,0 +1,10 @@
+.btn1 {
+    background-color: $lightGray;
+    aspect-ratio: 7/4;
+    @include flex (column, center, center, 10px);
+    color: black;
+
+    &__img {
+        width: 25px;
+    }
+}

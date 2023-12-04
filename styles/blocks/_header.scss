@@ -1,0 +1,32 @@
+.header {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    &__wrapper {
+        width: clamp(400px, 70vw, 1200px);
+        @include flex (row, space-between, center, 40px);
+    }
+
+    &__nav-wrapper {
+        height: 100%;
+        border-bottom: 1px solid black;
+        padding: 20px 0;
+        @include flex(row, space-between, center);
+        flex-grow: 1;
+    }
+
+    &-nav {
+        &__list {
+            @include flex(row, auto, auto, 25px);
+        }
+    }
+
+    &__logo {
+        width: 100px;
+    }
+
+    
+}
+

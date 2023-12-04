@@ -1,0 +1,13 @@
+@import 'utilities/default';
+@import 'utilities/responsive';
+@import 'utilities/colors';
+@import 'utilities/mixins';
+
+@import 'blocks/header';
+@import 'blocks/hero';
+@import 'blocks/main';
+@import 'blocks/series';
+@import 'blocks/card';
+@import 'blocks/grid.scss';
+@import 'blocks/buttons';
+@import 'blocks/footer';

@@ -1,0 +1,14 @@
+.main {
+    background-color: rgb(15, 15, 15);
+    margin: 0 auto;
+    @include flex(column, auto, center);
+    
+
+    &__section {
+        width: 95vw;
+        padding: 10vh 0;
+        @include desktop {
+            width: 80vw;
+        }
+    }
+}

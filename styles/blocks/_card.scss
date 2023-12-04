@@ -1,0 +1,45 @@
+.card{
+
+    &--border {
+        padding: 20px;
+        border: 1px solid $gray;
+    }
+    &__img-wrapper {
+        aspect-ratio: 7/4.7;
+    }
+
+    &__img {
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__title {
+        &--big {
+            font-size: 35px;
+        }
+    }
+
+    &__price {
+        color: $gray;
+        margin-bottom: 10px;
+    }
+
+    &__txt {
+        margin-bottom: 10px;
+    }
+
+    &__link {
+        
+        display: block;
+
+        &::before {
+            content: '';
+            background: url(../../assets/chevron.png) no-repeat;
+            display: inline-block;
+            height: 20px;
+            width: 20px;
+            background-size: contain;
+            vertical-align: bottom;
+        }
+    }
+}

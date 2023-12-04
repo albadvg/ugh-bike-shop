@@ -1,0 +1,9 @@
+.grid{
+
+    @include grid (repeat(4, 1fr) , auto, 20px);
+
+    &--big {
+        @include grid (repeat(2, 1fr) , auto, 20px);
+    }
+    
+}
