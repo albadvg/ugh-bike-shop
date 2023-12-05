@@ -5,28 +5,65 @@
     justify-content: center;
 
     &__wrapper {
-        width: clamp(400px, 70vw, 1200px);
+        width: 100%;
+        padding-left: 20px;
         @include flex (row, space-between, center, 40px);
+
+        @include tablet {
+            width: 70vw;
+        }
     }
 
     &__nav-wrapper {
         height: 100%;
         border-bottom: 1px solid black;
-        padding: 20px 0;
         @include flex(row, space-between, center);
         flex-grow: 1;
     }
 
-    &-nav {
-        &__list {
-            @include flex(row, auto, auto, 25px);
-        }
-    }
-
     &__logo {
-        width: 100px;
+        width: 70px;
+
+        @include tablet {
+            width: 100px;
+        }
     }
 
     
 }
 
+.burguer-nav {
+    
+    @include tablet {
+        display: none;
+    }
+
+    &__icon {
+        width: 30px;
+    }
+}
+
+.desktop-nav {
+    display: none;
+
+    @include tablet {
+        display: block
+    }
+
+    
+
+    &__list {
+        @include flex(row, auto, auto, 25px);
+    }
+
+}
+
+.icons-nav {
+    &__list {
+        @include flex(row, auto, auto, 25px);
+    }
+
+    &__icon {
+        width: 18px;
+    }
+}
